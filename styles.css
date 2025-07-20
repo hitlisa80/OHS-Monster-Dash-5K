@@ -4,6 +4,12 @@ body {
     background-color:rgb(206, 126, 51)
 }
 
+nobullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
 
 header {
   padding: 1.5rem;
@@ -32,7 +38,7 @@ header {
 }
 nav {
 ul {
-  list-style-type: none;
+  list-style-type:none;
   margin: 0;
   padding: 0;
   overflow: hidden;
