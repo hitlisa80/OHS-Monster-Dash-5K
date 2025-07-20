@@ -13,12 +13,21 @@ header {
 }
 
 header {
+  h1 {
   padding: 1.5 rem;
   background-color:#333;
   color:white;
   text-align: center;
   font-size: large;
-  font: italic; /*change this when I have wifi*/
+  }
+  h2 {
+    padding: 1.5 rem;
+  background-color:#333;
+  color:white;
+  text-align: center;
+  font-size:larger;
+  font-family: 'Butcherman', cursive;
+  }
 }
 nav {
 ul {
@@ -52,8 +61,8 @@ img {
 
 article {
    float: center;
-  padding: 20px;
-  width: 80%;
+   margin: 10px;
+  padding: 15px;
   background-color: #f1f1f1;
 }
 
