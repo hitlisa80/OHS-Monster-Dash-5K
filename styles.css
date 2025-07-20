@@ -9,7 +9,12 @@ nobullets {
   padding-left: 0;
 }
 
-
+header{
+   padding: 1.5 rem;
+  background-color:#333;
+  color:white;
+  text-align: center;
+}
 header {
   h1 {
   padding: 1.5 rem;
