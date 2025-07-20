@@ -57,6 +57,8 @@ ul {
 
 img {
   border-radius: 35%;
+  width 80%;
+  float: center;
 }
 
 article {
