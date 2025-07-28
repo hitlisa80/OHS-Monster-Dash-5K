@@ -4,9 +4,10 @@ body {
     background-color:rgb(206, 126, 51)
 }
 
-nobullets {
+ul {
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -30,12 +31,23 @@ header {
 nav ul {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* so links wrap if they don't fit */
-  padding: 0;
+  gap: 10px; 
+  background-color: #333;
+}
+
+nav ul li {
+ 
 }
 
 nav ul li a {
-  padding: 14px 24px; /* more clickable and open */
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #111;
 }
 
 
@@ -63,7 +75,7 @@ footer {
 }
 
 
-form-container {
+.form-container {
       max-width: 800px;
       margin: 50px auto;
       padding: 20px;
