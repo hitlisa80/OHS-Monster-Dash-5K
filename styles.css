@@ -90,6 +90,10 @@ footer {
       border-radius: 8px;
     }
 
+  iframe {
+  border: none; 
+}
+
   .banner-image {
   width: 100%;      
   height: auto;      
