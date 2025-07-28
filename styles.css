@@ -27,31 +27,17 @@ header {
   font-family: 'Metal Mania', cursive;
   }
 }
-nav {
-ul {
-  list-style-type:none;
-  margin: 0;
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* so links wrap if they don't fit */
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  }
-
-  li {
-    float: left;
-  }
-
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    }
-
-    li a:hover {
-      background-color: #111;
-    }
 }
+
+nav ul li a {
+  padding: 14px 24px; /* more clickable and open */
+}
+
 
 img {
   max-width: 100%;
@@ -60,12 +46,14 @@ img {
 }
 
 
-article {
-   float: center;
-   margin: 10px;
-  padding: 15px;
+ article {
+  max-width: 800px;
+  margin: 20px auto; 
+  padding: 20px;
   background-color: #f1f1f1;
+  border-radius: 8px;
 }
+
 
 footer {
   background-color: #160909;
@@ -83,3 +71,46 @@ form-container {
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       border-radius: 8px;
     }
+
+    banner-image {
+  width: 100%;      
+  height: auto;      
+  display: block;    
+  margin-top: 10px;  
+  border-radius: 8px;
+    }
+
+    header, nav, section, footer {
+      margin-bottom: 20px;
+    }
+
+    
+@media (max-width: 600px) {
+
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  
+  header, nav, section, footer {
+    margin-bottom: 15px;
+  }
+
+  article {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  
+  iframe {
+    width: 100% !important;
+    height: auto;
+  }
+}
