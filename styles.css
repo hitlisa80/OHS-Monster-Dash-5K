@@ -50,6 +50,13 @@ nav ul li a:hover {
   background-color: #111;
 }
 
+.price-list {
+  margin-left: 20px;
+}
+
+.price-list li {
+  padding: 4px 0;
+}
 
 img {
   max-width: 100%;
