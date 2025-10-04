@@ -38,6 +38,16 @@
   height="1096"
   class="responsive-iframe">  
 </iframe>
+
+<script>
+  // Poll for form submission completion
+  const iframe = document.querySelector("iframe");
+  iframe.onload = function() {
+    if (iframe.contentWindow.location.href.includes("formResponse")) {
+      window.location.href = "https://sfnd.io/5gw4w";
+    }
+  };
+</script>
 </section>
 
 
