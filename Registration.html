@@ -40,10 +40,13 @@
 </iframe>
 
 <script>
-  const iframe = document.querySelector("iframe");
+  const iframe = document.getElementById("googleForm");
+
   iframe.onload = function() {
+    // Detect if the form was just submitted
     if (iframe.contentWindow.location.href.includes("formResponse")) {
-      window.location.href = "https://sfnd.io/5gw4w";
+      // Open SuccessFund in a new tab
+      window.open("https://sfnd.io/5gw4w", "_blank");
     }
   };
 </script>
